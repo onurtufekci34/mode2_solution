@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.bodyContainer {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.menu{
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
+}
+
+.outContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px 0px 20px;
+   
+}
+.container1{
+    border: 3px solid black;
+    
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: gray;
+    position: relative;
+}
+
+.container2{
+    border: 3px solid black;
+    
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: gray;
+    
+}
+
+.container3{
+    border: 3px solid black;
+    
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: gray;
+}
+
+#chicken {
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+    float: right;
+    padding: 5px 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: cadetblue;
+    font-weight: 700;
+    
+}
+#beef{
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+    float: right;
+    padding: 5px 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: deepskyblue;
+    font-weight: 700;
+}
+#sushi{
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+    float: right;
+    padding: 5px 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: darkgoldenrod;
+    font-weight: 700;
+}
+
+p{
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+.firstTwo {
+    display: flex;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .outContainer {
+        flex-direction: column;
+        padding: 20px;
+        
+    }
+    .container3{
+        height: 150px;
+    }
+}
+
+@media (max-width: 787px) {
+    .firstTwo {
+        flex-direction: column;
+        padding:10px 30px 10px 30px;
+        
+    }
+    .container3{
+        margin:0px 30px 0px 30px;
+    }
+
+    .outContainer {
+        flex-direction: column;
+        
+    }
+    .container1,.container2{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+ 
+}
